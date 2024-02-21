@@ -1,0 +1,21 @@
+:root {
+  --color-white: #fff;
+  --color-border: #c3c7e0;
+  --color-normal: rgb(220, 220, 220);
+  --color-success: rgb(29, 185, 76);
+  --color-red:  #CB0D1F;
+  --color-black:  #231F20 0% 0% no-repeat padding-box;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+body {
+  margin: 0;
+  font-family: 'open sans', sans-serif;
+ 
+}
+ 

@@ -1,0 +1,16 @@
+.container {
+  
+   @media (max-width: 767px){
+       height: 0;
+       display: none;
+   }
+   
+   @media (min-width: 767px){
+       width: 100%;
+       background-color:  var(--color-red) !important;
+       height: 54px;
+       transition: 0.2s all;
+   }
+   transition: 0.2s all;
+
+}

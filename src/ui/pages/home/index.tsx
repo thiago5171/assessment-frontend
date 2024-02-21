@@ -1,5 +1,8 @@
 import { useEffect } from "react";
 import { useCategories, useListCategories } from "../../contexts/category/hooks";
+import Header from "../../components/molecules/header";
+import styles from './styles.module.scss';
+import Body from "../../components/molecules/bodyHome";
 
 function Home() {
     const data = useCategories();
@@ -12,8 +15,9 @@ function Home() {
     }, []);
     console.log(data);
   return (
-    <div>
-      <h1>Home</h1>
+    <div className={styles.container}   >
+        <Header></Header>
+        <Body categories={data}/>
     </div>
   );
 }

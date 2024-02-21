@@ -1,0 +1,16 @@
+.container {
+    margin-top: 8rem; //TODO: remover
+    display: flex;
+    align-items: center;
+    height: 54px;
+    width: '100%';
+    justify-content: space-evenly;
+}
+
+.item {
+    color: var(--color-white);
+    font-size: 16px;
+    margin-left: 10px;
+    font-weight: 800;    
+    cursor: pointer;
+}
