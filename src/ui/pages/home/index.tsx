@@ -1,27 +1,26 @@
 import { useEffect } from "react";
-import { useCategories, useListCategories } from "../../contexts/category/hooks";
+import {
+  useListCategories,
+} from "../../contexts/category/hooks";
 import Header from "../../components/molecules/header";
-import styles from './styles.module.scss';
-import Body from "../../components/molecules/bodyHome";
+import styles from "./styles.module.scss";
+import Body from "../../components/molecules/body";
 
 function Home() {
-    const data = useCategories();
-    const list = useListCategories();
+  const list = useListCategories();
 
-    useEffect(() => {
-        if (list) {
-        list();
-        }
-    }, []);
-    console.log(data);
+  useEffect(() => {
+    if (list) {
+      list();
+    }
+  }, []);
+
   return (
-    <div className={styles.container}   >
-        <Header></Header>
-        <Body categories={data}/>
+    <div className={styles.container}>
+      <Header />
+      <Body />
     </div>
   );
 }
 
 export default Home;
-
- 

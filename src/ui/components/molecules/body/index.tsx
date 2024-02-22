@@ -1,15 +1,16 @@
-import Catergory from "../../../../core/domain/models/Category";
 import TopMenu from "../menu/topMenu";
+import NavigateSelector from "../navigateSelector";
 import styles from "./styles.module.scss";
 
 interface BodyProps {
-  categories: Catergory[];
 }
 
-function Body({ categories }: BodyProps) {
+function Body({  }: BodyProps) {
   return (
     <div className={styles.container}>
-      <TopMenu categories={categories} />
+      <TopMenu   />
+      <NavigateSelector />
+
     </div>
   );
 }

@@ -13,3 +13,10 @@ export function useLoading() {
     return useContextSelector(CategoryCTX, (ctx) => ctx.loading);
 }
  
+export function useSelectCategory() {
+    return useContextSelector(CategoryCTX, (ctx) => ctx.selectCategory);
+}
+
+export function useSelectedCategory() {
+    return useContextSelector(CategoryCTX, (ctx) => ctx.selectedCategory);
+}

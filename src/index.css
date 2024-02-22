@@ -1,5 +1,7 @@
 :root {
   --color-white: #fff;
+  --color-grey-light: #e2dedc;
+  --color-grey-bold: #ACACAC;
   --color-border: #c3c7e0;
   --color-normal: rgb(220, 220, 220);
   --color-success: rgb(29, 185, 76);

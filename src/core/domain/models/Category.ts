@@ -4,6 +4,11 @@ class Catergory {
     private _name!: string;
     private _path!: string;
     
+    constructor(id?: string, name?: string, path?: string) {
+        this._id = id || '';
+        this._name = name || '';
+        this._path = path || '';
+    }
   
     static fromJSON(json: Record<string, unknown>): Catergory {
         const obj = new Catergory();

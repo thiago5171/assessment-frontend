@@ -1,17 +1,26 @@
-import Catergory from "../../../../../core/domain/models/Category";
+import { contact, homePage } from "../../../../../core/static/extraCategories";
+import { useCategories, useSelectCategory } from "../../../../contexts/category/hooks";
 import styles from "./styles.module.scss";
 
 interface TopMenuProps {
-    categories: Catergory[];
+    
 }
-function TopMenu({ categories }: TopMenuProps) {
+function TopMenu({  }: TopMenuProps) {
+  const categories = useCategories();
+  const defineCategory = useSelectCategory();
+   
+  
+  const handleCategory = (category: any) => {
+    defineCategory(category).then();
+  }
+
   return (
     <div className={styles.container}> 
-     <div className={styles.item} > Página inicial   </div>
+     <div className={styles.item} onClick={()=> handleCategory(homePage)} >PÁGINA INICIAL</div>
       {categories.map((category) => (
-        <div className={styles.item} key={category.id}>{category.name}</div>
+        <div className={styles.item} onClick={()=>handleCategory(category)} key={category.id}>{category.name.toLocaleUpperCase()}</div>
         ))}
-     <div className={styles.item} > Contato   </div>
+     <div className={styles.item} onClick={()=> handleCategory(contact)}  > CONTATO   </div>
 
     </div>
   );
