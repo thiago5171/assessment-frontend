@@ -1,7 +1,7 @@
-import Product from "../../domain/models/Product";
-
+import StructProduct from "../../domain/models/StructProduct";
+ 
 abstract class IProductAdapter {
-    abstract listByCategory(id: number): Promise<Product[]>;
+    abstract listByCategory(id: string): Promise<StructProduct>;
 }
 
 export default IProductAdapter;

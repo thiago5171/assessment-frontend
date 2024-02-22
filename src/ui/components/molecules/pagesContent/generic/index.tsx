@@ -1,10 +1,17 @@
+import Breadcrumb from "../../../atoms/breadcrumb";
+import SideMenu from "../../menu/sideMenu";
+import styles from "./styles.module.scss";
 
 function GenericPage() {
+
   return (
-    <div>
-      <h1>Contsssssssact</h1>
-      <p>Feel free to contact us.</p>
-    </div>
+    <div className={styles.container}>
+      <Breadcrumb />
+    <SideMenu />
+  <div> 
+    
+  </div>
+</div>
   );
 }
 

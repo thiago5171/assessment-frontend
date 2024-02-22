@@ -1,0 +1,47 @@
+.container{
+    //organizar todos os items na mesma linha um ao lado do outro 
+    display: flex;
+    width: 100%;
+    
+    height: 20px;
+    @media (min-width: 768px){
+        margin: 30px 0 0 20px;
+       
+   }
+
+    @media (min-width: 1024px){
+       
+    }
+
+    @media (min-width: 1440px){
+        margin-left: 100px;
+        
+    }
+
+    @media (max-width: 767px){
+        margin: 25px 0 0 15px;
+    }
+
+     
+}
+ 
+
+.prefixText {
+    font-size: 14px;
+    font-family: 'open sans', sans-serif;
+    margin-right: 4px;
+    color: var(--color-green-blue);
+
+}
+
+.categoryName {
+    font-size: 14px;
+    font-family: 'open sans', sans-serif;
+    color: var(--color-red);
+    margin-left: 4px;
+}
+
+.textDefault {
+    font-size: 14px;
+    font-family: 'open sans', sans-serif;
+}

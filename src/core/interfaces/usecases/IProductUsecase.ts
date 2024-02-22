@@ -1,10 +1,10 @@
-import Product from "../../domain/models/Product";
+import StructProduct from "../../domain/models/StructProduct";
 import IProductAdapter from "../adapters/IProductAdapter";
 
 abstract class IProductUsecase {
     constructor(protected readonly adapter: IProductAdapter) {}
 
-    abstract listByCategory(id: number): Promise<Product[]>;
+    abstract listByCategory(id: string): Promise<StructProduct>;
 }
 
 export default IProductUsecase;

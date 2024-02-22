@@ -3,6 +3,7 @@ import styles from "./styles.module.scss";
 
 function SimpleSideMenu() {
   const categories = useCategories();
+  
   return (
       <div className={styles.sideMenu}>
         <div className={styles.menuList}>

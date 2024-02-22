@@ -1,16 +1,81 @@
-.container {
-    margin-top: 8rem; //TODO: remover
-    display: flex;
-    align-items: center;
-    height: 54px;
-    width: '100%';
-    justify-content: space-evenly;
+.sideMenu {
+   margin: 20px 0 0 20px;
+   border: 1px solid var(--color-grey-light);
+   padding: 13.5px 0 0 17.5px;
+
+   @media (min-width: 768px) {
+      width: 207px;
+      height: 474px;
+   }
+
+   @media (min-width: 1024px) {
+      width: 226px;
+      height: 474px;
+   }
+
+   @media (min-width: 1440px) {
+      margin-left: 100px;
+      width: 261px;
+      height: 474px;
+   }
+
+   @media (max-width: 767px) {
+      margin-left: 15px;
+      width: 290px;
+      height: 474px;
+   }
+
+
 }
 
-.item {
-    color: var(--color-white);
-    font-size: 16px;
-    margin-left: 10px;
-    font-weight: 800;    
-    cursor: pointer;
+.title {
+   font-size: 24px;
+   font-family: 'open sans', sans-serif;
+   color: var(--color-red);
+}
+
+.subTitle {
+   font-size: 18px;
+   font-family: 'open sans', sans-serif;
+   color: var(--color-green-ligth);
+   margin-bottom: 10px;
+}
+
+.menuList {
+    margin-bottom: 3rem;
+}
+
+.itemList {
+   color: var(--color-grey-medium);
+}
+
+.menuListColor {
+   display: flex; // Define o display flex para que os itens se comportem como flex-items
+   justify-items: space-between; // Define o alinhamento dos itens no eixo principal
+}
+
+.colorRed {
+   background-color: red;
+   width: 48px;
+   height: 24px;
+   margin-right: 3px;
+
+
+}
+
+.colorOrange {
+   background-color: rgb(21, 13, 13);
+   width: 48px;
+   height: 24px;
+   margin-right: 3px;
+
+}
+
+.colorGreen {
+   background-color: rgb(47, 98, 208);
+   width: 48px;
+   height: 24px;
+   margin-right: 3px;
+
+
 }

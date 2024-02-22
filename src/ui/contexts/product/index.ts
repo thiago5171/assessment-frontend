@@ -1,9 +1,9 @@
 import { createContext } from 'use-context-selector';
-import Product from '../../../core/domain/models/Product';
+import StructProduct from '../../../core/domain/models/StructProduct';
 
 interface Props {
-    listByCategory(id: number): Promise<void>
-    products: Product[] 
+    listByCategory(id: string): Promise<void>
+    products: StructProduct | undefined
     loading: boolean
 }
 
