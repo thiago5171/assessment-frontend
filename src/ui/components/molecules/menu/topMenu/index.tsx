@@ -11,6 +11,8 @@ function TopMenu({ categories }: TopMenuProps) {
       {categories.map((category) => (
         <div className={styles.item} key={category.id}>{category.name}</div>
         ))}
+     <div className={styles.item} > Contato   </div>
+
     </div>
   );
 }
