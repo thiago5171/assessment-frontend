@@ -1,0 +1,22 @@
+.container {
+    border: 1px solid var(--color-grey-light);
+    @media (min-width: 768px) {
+        width: 150px;
+        height: 165px;
+    }
+   
+    @media (min-width: 1024px) {
+        width: 163px;
+        height: 179px;
+     }
+  
+     @media (min-width: 1440px) {
+        width: 196px;
+        height: 216px;
+     }
+  
+     @media (max-width: 767px) {
+        width: 133px;
+        height: 146px;
+     }
+}

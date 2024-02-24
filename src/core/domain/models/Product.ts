@@ -5,7 +5,6 @@ class Product {
     private _path!: string;
     private _price!: number;
     private _image!: string;
-    private _category!: string;
     private _filter!: Record<string, string>[];
 
     static fromJSON(json: Record<string, unknown>): Product {
@@ -17,7 +16,6 @@ class Product {
         obj._path = String(json.path)
         obj._price = Number(json.price)
         obj._image = String(json.image)
-        obj._category = String(json.category)
         obj._filter =  json.filter as Record<string, string>[];
         return obj;
     }
@@ -44,10 +42,6 @@ class Product {
 
     public get image(): string {
         return this._image;
-    }
-
-    public get category(): string {
-        return this._category;
     }
 
     public get filter(): Record<string, string>[] {

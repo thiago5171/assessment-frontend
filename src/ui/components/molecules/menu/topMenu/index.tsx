@@ -1,15 +1,16 @@
+import Catergory from "../../../../../core/domain/models/Category";
 import { contact, homePage } from "../../../../../core/static/extraCategories";
-import { useCategories, useSelectCategory, useSelectedCategory } from "../../../../contexts/category/hooks";
+import { useCategories, useSelectCategory } from "../../../../contexts/category/hooks";
 import { useListByCtegory } from "../../../../contexts/product/hooks";
 import styles from "./styles.module.scss";
 
 interface TopMenuProps {
-    
+  selectedCategory?: Catergory;
+
 }
-function TopMenu({  }: TopMenuProps) {
+function TopMenu({ selectedCategory }: TopMenuProps) {
   const categories = useCategories();
   const defineCategory = useSelectCategory();
-  const selectedCategory = useSelectedCategory();
   const listProducts = useListByCtegory();
 
    

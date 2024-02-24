@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import {
   useListCategories,
+  useSelectedCategory,
 } from "../../contexts/category/hooks";
 import Header from "../../components/molecules/header";
 import styles from "./styles.module.scss";
@@ -8,7 +9,7 @@ import Body from "../../components/molecules/body";
 
 function Home() {
   const list = useListCategories();
-
+  const selectedCategory = useSelectedCategory();
   useEffect(() => {
     if (list) {
       list();
@@ -18,7 +19,7 @@ function Home() {
   return (
     <div className={styles.container}>
       <Header />
-      <Body />
+      <Body selectedCategory={selectedCategory}   />
     </div>
   );
 }

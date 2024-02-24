@@ -1,0 +1,33 @@
+ .buttonStyle{
+    width: 210px;
+    height: 40px;
+    /* UI Properties */
+    border: 0;
+    font-family: 'open sans', sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--color-white);
+    background: var(---00a8a9) 0% 0% no-repeat padding-box;
+    background: #00A8A9 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    opacity: 1;
+
+    @media (min-width: 768px) {
+        width: 149px;
+        height: 40px;
+     }
+  
+     @media (min-width: 1024px) {
+        width: 161px;
+        height: 40px;
+     }
+  
+     @media (min-width: 1440px) {
+        width: 210px;
+        height: 40px;
+     }
+  
+     @media (max-width: 767px) {
+      display: none;
+     }
+ }
